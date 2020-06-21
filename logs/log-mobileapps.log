@@ -1,0 +1,388 @@
+supervisor: couldn't exec /web/activities/mobileapps/run.sh: ENOEXEC
+supervisor: child process was not spawned
+supervisor: couldn't exec /web/activities/mobileapps/run.sh: ENOEXEC
+supervisor: child process was not spawned
+supervisor: couldn't exec /web/activities/mobileapps/run.sh: ENOEXEC
+supervisor: child process was not spawned
+supervisor: couldn't exec /web/activities/mobileapps/run.sh: ENOEXEC
+supervisor: child process was not spawned
+supervisor: couldn't exec /web/activities/mobileapps/run.sh: ENOEXEC
+supervisor: child process was not spawned
+supervisor: couldn't exec /web/activities/mobileapps/run.sh: ENOEXEC
+supervisor: child process was not spawned
+supervisor: couldn't exec /web/activities/mobileapps/run.sh: ENOEXEC
+supervisor: child process was not spawned
+supervisor: couldn't exec /web/activities/mobileapps/run.sh: ENOEXEC
+supervisor: child process was not spawned
+supervisor: couldn't exec /web/activities/mobileapps/run.sh: ENOEXEC
+supervisor: child process was not spawned
+supervisor: couldn't exec /web/activities/mobileapps/run.sh: ENOEXEC
+supervisor: child process was not spawned
+supervisor: couldn't exec /web/activities/mobileapps/run.sh: ENOEXEC
+supervisor: child process was not spawned
+supervisor: couldn't exec /web/activities/mobileapps/run.sh: ENOEXEC
+supervisor: child process was not spawned
+[2020-06-21 18:15:16 -0400] [32311] [INFO] Starting gunicorn 20.0.0
+[2020-06-21 18:15:16 -0400] [32311] [INFO] Listening at: http://127.0.0.1:10831 (32311)
+[2020-06-21 18:15:16 -0400] [32311] [INFO] Using worker: sync
+[2020-06-21 18:15:16 -0400] [32320] [INFO] Booting worker with pid: 32320
+[2020-06-21 18:15:16 -0400] [32320] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 133, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 142, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 331, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'server'
+[2020-06-21 18:15:16 -0400] [32320] [INFO] Worker exiting (pid: 32320)
+[2020-06-21 18:15:16 -0400] [32311] [INFO] Shutting down: Master
+[2020-06-21 18:15:16 -0400] [32311] [INFO] Reason: Worker failed to boot.
+[2020-06-21 18:15:19 -0400] [32516] [INFO] Starting gunicorn 20.0.0
+[2020-06-21 18:15:19 -0400] [32516] [INFO] Listening at: http://127.0.0.1:10831 (32516)
+[2020-06-21 18:15:19 -0400] [32516] [INFO] Using worker: sync
+[2020-06-21 18:15:19 -0400] [32585] [INFO] Booting worker with pid: 32585
+[2020-06-21 18:15:19 -0400] [32585] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 133, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 142, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 331, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'server'
+[2020-06-21 18:15:19 -0400] [32585] [INFO] Worker exiting (pid: 32585)
+[2020-06-21 18:15:19 -0400] [32516] [INFO] Shutting down: Master
+[2020-06-21 18:15:19 -0400] [32516] [INFO] Reason: Worker failed to boot.
+[2020-06-21 18:15:23 -0400] [521] [INFO] Starting gunicorn 20.0.0
+[2020-06-21 18:15:23 -0400] [521] [INFO] Listening at: http://127.0.0.1:10831 (521)
+[2020-06-21 18:15:23 -0400] [521] [INFO] Using worker: sync
+[2020-06-21 18:15:23 -0400] [582] [INFO] Booting worker with pid: 582
+[2020-06-21 18:15:23 -0400] [582] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 133, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 142, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 331, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'server'
+[2020-06-21 18:15:23 -0400] [582] [INFO] Worker exiting (pid: 582)
+[2020-06-21 18:15:23 -0400] [521] [INFO] Shutting down: Master
+[2020-06-21 18:15:23 -0400] [521] [INFO] Reason: Worker failed to boot.
+[2020-06-21 18:15:28 -0400] [1057] [INFO] Starting gunicorn 20.0.0
+[2020-06-21 18:15:28 -0400] [1057] [INFO] Listening at: http://127.0.0.1:10831 (1057)
+[2020-06-21 18:15:28 -0400] [1057] [INFO] Using worker: sync
+[2020-06-21 18:15:28 -0400] [1105] [INFO] Booting worker with pid: 1105
+[2020-06-21 18:15:28 -0400] [1105] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 133, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 142, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 331, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'server'
+[2020-06-21 18:15:28 -0400] [1105] [INFO] Worker exiting (pid: 1105)
+[2020-06-21 18:15:28 -0400] [1057] [INFO] Shutting down: Master
+[2020-06-21 18:15:28 -0400] [1057] [INFO] Reason: Worker failed to boot.
+/web/activities/mobileapps/run.sh: line 2: venv/bin/activate: No such file or directory
+[2020-06-21 18:17:26 -0400] [2927] [INFO] Starting gunicorn 20.0.0
+[2020-06-21 18:17:26 -0400] [2927] [INFO] Listening at: http://127.0.0.1:10831 (2927)
+[2020-06-21 18:17:26 -0400] [2927] [INFO] Using worker: sync
+[2020-06-21 18:17:26 -0400] [2955] [INFO] Booting worker with pid: 2955
+[2020-06-21 18:17:26 -0400] [2955] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 133, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 142, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 331, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'server'
+[2020-06-21 18:17:26 -0400] [2955] [INFO] Worker exiting (pid: 2955)
+[2020-06-21 18:17:26 -0400] [2927] [INFO] Shutting down: Master
+[2020-06-21 18:17:26 -0400] [2927] [INFO] Reason: Worker failed to boot.
+/web/activities/mobileapps/run.sh: line 2: venv/bin/activate: No such file or directory
+[2020-06-21 18:17:28 -0400] [2966] [INFO] Starting gunicorn 20.0.0
+[2020-06-21 18:17:28 -0400] [2966] [INFO] Listening at: http://127.0.0.1:10831 (2966)
+[2020-06-21 18:17:28 -0400] [2966] [INFO] Using worker: sync
+[2020-06-21 18:17:28 -0400] [2971] [INFO] Booting worker with pid: 2971
+[2020-06-21 18:17:28 -0400] [2971] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 133, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 142, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 331, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'server'
+[2020-06-21 18:17:28 -0400] [2971] [INFO] Worker exiting (pid: 2971)
+[2020-06-21 18:17:28 -0400] [2966] [INFO] Shutting down: Master
+[2020-06-21 18:17:28 -0400] [2966] [INFO] Reason: Worker failed to boot.
+/web/activities/mobileapps/run.sh: line 2: venv/bin/activate: No such file or directory
+[2020-06-21 18:17:32 -0400] [3007] [INFO] Starting gunicorn 20.0.0
+[2020-06-21 18:17:32 -0400] [3007] [INFO] Listening at: http://127.0.0.1:10831 (3007)
+[2020-06-21 18:17:32 -0400] [3007] [INFO] Using worker: sync
+[2020-06-21 18:17:32 -0400] [3013] [INFO] Booting worker with pid: 3013
+[2020-06-21 18:17:32 -0400] [3013] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 133, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 142, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 331, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'server'
+[2020-06-21 18:17:32 -0400] [3013] [INFO] Worker exiting (pid: 3013)
+[2020-06-21 18:17:32 -0400] [3007] [INFO] Shutting down: Master
+[2020-06-21 18:17:32 -0400] [3007] [INFO] Reason: Worker failed to boot.
+/web/activities/mobileapps/run.sh: line 2: venv/bin/activate: No such file or directory
+[2020-06-21 18:17:37 -0400] [3043] [INFO] Starting gunicorn 20.0.0
+[2020-06-21 18:17:37 -0400] [3043] [INFO] Listening at: http://127.0.0.1:10831 (3043)
+[2020-06-21 18:17:37 -0400] [3043] [INFO] Using worker: sync
+[2020-06-21 18:17:37 -0400] [3048] [INFO] Booting worker with pid: 3048
+[2020-06-21 18:17:37 -0400] [3048] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 133, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 142, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 331, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'server'
+[2020-06-21 18:17:37 -0400] [3048] [INFO] Worker exiting (pid: 3048)
+[2020-06-21 18:17:37 -0400] [3043] [INFO] Shutting down: Master
+[2020-06-21 18:17:37 -0400] [3043] [INFO] Reason: Worker failed to boot.
+supervisor: couldn't chdir to /web/activities/mobileapps/public: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /web/activities/mobileapps/public: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /web/activities/mobileapps/public: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't chdir to /web/activities/mobileapps/public: ENOENT
+supervisor: child process was not spawned
+/web/activities/mobileapps/run.sh: line 2: ../mobileapps/venv/bin/activate: No such file or directory
+[2020-06-21 18:24:20 -0400] [8046] [INFO] Starting gunicorn 20.0.0
+[2020-06-21 18:24:20 -0400] [8046] [INFO] Listening at: http://127.0.0.1:10831 (8046)
+[2020-06-21 18:24:20 -0400] [8046] [INFO] Using worker: sync
+[2020-06-21 18:24:20 -0400] [8051] [INFO] Booting worker with pid: 8051
+[2020-06-21 18:24:20 -0400] [8051] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 133, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 142, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 331, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'server'
+[2020-06-21 18:24:20 -0400] [8051] [INFO] Worker exiting (pid: 8051)
+[2020-06-21 18:24:20 -0400] [8046] [INFO] Shutting down: Master
+[2020-06-21 18:24:20 -0400] [8046] [INFO] Reason: Worker failed to boot.
+/web/activities/mobileapps/run.sh: line 2: ../mobileapps/venv/bin/activate: No such file or directory
+[2020-06-21 18:24:22 -0400] [8084] [INFO] Starting gunicorn 20.0.0
+[2020-06-21 18:24:22 -0400] [8084] [INFO] Listening at: http://127.0.0.1:10831 (8084)
+[2020-06-21 18:24:22 -0400] [8084] [INFO] Using worker: sync
+[2020-06-21 18:24:22 -0400] [8093] [INFO] Booting worker with pid: 8093
+[2020-06-21 18:24:22 -0400] [8093] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 133, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 142, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 331, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'server'
+[2020-06-21 18:24:22 -0400] [8093] [INFO] Worker exiting (pid: 8093)
+[2020-06-21 18:24:22 -0400] [8084] [INFO] Shutting down: Master
+[2020-06-21 18:24:22 -0400] [8084] [INFO] Reason: Worker failed to boot.
+/web/activities/mobileapps/run.sh: line 2: ../mobileapps/venv/bin/activate: No such file or directory
+[2020-06-21 18:24:26 -0400] [8127] [INFO] Starting gunicorn 20.0.0
+[2020-06-21 18:24:26 -0400] [8127] [INFO] Listening at: http://127.0.0.1:10831 (8127)
+[2020-06-21 18:24:26 -0400] [8127] [INFO] Using worker: sync
+[2020-06-21 18:24:26 -0400] [8137] [INFO] Booting worker with pid: 8137
+[2020-06-21 18:24:26 -0400] [8137] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 133, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 142, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 331, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'server'
+[2020-06-21 18:24:26 -0400] [8137] [INFO] Worker exiting (pid: 8137)
+[2020-06-21 18:24:26 -0400] [8127] [INFO] Shutting down: Master
+[2020-06-21 18:24:26 -0400] [8127] [INFO] Reason: Worker failed to boot.
+/web/activities/mobileapps/run.sh: line 2: ../mobileapps/venv/bin/activate: No such file or directory
+[2020-06-21 18:24:31 -0400] [8169] [INFO] Starting gunicorn 20.0.0
+[2020-06-21 18:24:31 -0400] [8169] [INFO] Listening at: http://127.0.0.1:10831 (8169)
+[2020-06-21 18:24:31 -0400] [8169] [INFO] Using worker: sync
+[2020-06-21 18:24:31 -0400] [8173] [INFO] Booting worker with pid: 8173
+[2020-06-21 18:24:31 -0400] [8173] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 133, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 142, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 331, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'server'
+[2020-06-21 18:24:31 -0400] [8173] [INFO] Worker exiting (pid: 8173)
+[2020-06-21 18:24:31 -0400] [8169] [INFO] Shutting down: Master
+[2020-06-21 18:24:31 -0400] [8169] [INFO] Reason: Worker failed to boot.
