@@ -478,6 +478,7 @@ mark,
   max-width: 100%;
   height: auto;
   margin-bottom: 1.5em;
+  border-radius: 50px;
 }
 
 .img-thumbnail {
@@ -10166,4 +10167,10 @@ header.masthead h1 {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
+}
+
+.project-img {
+  width: 500px;
+  padding: 20px;
+  border-radius: 50px;
 }

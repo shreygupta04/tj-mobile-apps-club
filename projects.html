@@ -18,11 +18,16 @@
         <link href="css/styles.css" rel="stylesheet" />
         <style>
             header.masthead {
+                padding-bottom: calc(10rem - 4.5rem);
                 background: url(img/theme.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
+            }
+
+            body {
+                overflow-x: hidden;
             }
         </style>
     </head>
@@ -34,28 +39,25 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Lectures</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">Projects</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Services-->
         <header class="masthead">
-            <div class="container" style="margin-top: 2rem; color: white;">
-                    <h2>About Us</h2>
-                    <p style="padding-bottom: 30px;">
-                        Mobile Apps Club was created in 2015 by Spencer Atkin for the purpose of teaching people how to make iPhone and Android apps. 
-                        In a relaxed environment, our officers will walk you through the steps to create an app, 
-                        starting with the basics and getting slightly more complicated as the year goes on. By the end of the year you will
-                        have the knowledge to build basic to more complex apps that involve databases and API calls.
-                        We are very friendly and like to have a good time. People of all skill levels are welcome. 
-                    </p>
-                    <div class="text-center">
-                        <img class="img-fluid" src="img/portfolio/resources/group.png" style="width: 60%;">
-                        <p style="font-size: small;">Match Mobile initial idea pitch</p>
-                    </div>
+            <div class="row">
+                <a href="https://github.com/Pranav-Wadhwa/MAC-Match-Mobile">
+                    <img class="project-img" src="img/portfolio/resources/matchmobile.png">
+                </a>
+                <a href="https://github.com/nishanthalladi/TTSTest">
+                    <img class="project-img" src="img/portfolio/resources/texttospeech.png">
+                </a>
+                <a href="https://github.com/nishanthalladi/pomodoro">
+                    <img class="project-img" src="img/portfolio/resources/pomodoro.png">
+                </a>
             </div>
         </header>
         
